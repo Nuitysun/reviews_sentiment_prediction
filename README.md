@@ -123,7 +123,7 @@ If we compare data with only filled rating and all data (with predicted sentimen
 ## Conclusion
 
 In this project we retrieved and explored reviews data from the web-site Rozetka.ua.
-We were able to build a model to predict reviews sentiment that performed quite well on the training set and showed good results on the unseen data: it predicted correct sentiment for 95% of reviews in testing set.
+We were able to build a model to predict reviews sentiment that performed quite well on the training set and showed good results on the unseen data: it predicted correct sentiment for 98% of reviews in testing set.
 
 However, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 70-85%. Content of reviews are often confusing, model doesn’t always identify sentiment correctly and sometimes it’s hard to identify it even with manual check.
 
