@@ -96,11 +96,11 @@ Oversample negative class in the initial data to remove class imbalance in targe
 
 ### Step 7: Running BERT model v2 and evaluating model performance
 In this section we check perfomace of BERT model v2 :
-- check confusion matrix, accuracy, precision and recall metrics on **training set**,
+- check accuracy and confusion matrix on **training set**,
 > - Accuracy - 89%.
 > - Predictions for positive reviews are more accurate: 93% of all predicted reviews are actually positive and 92% of all positive reviews were detected correctly.
 > -  Predictions for negative reviews are less accurate: only 76% of all predicted reviews are actually negative and 80% of all negative reviews were detected correctly.
-- make predictions and check confusion matrix, accuracy, precision and recall metrics on **testing set**,
+- make predictions and check accuracy and confusion matrix on **testing set**,
 > - Accuracy - 89%. 
 >- Area Under the Receiver Operating Characteristic Curve on test dataset is 0.87, so there is a 87.2% chance that the model will be able to distinguish between positive and negative class for reviews.
 > - Predictions for positive reviews are quite accurate: almost 95% of all predicted reviews are actually positive and 90% of all positive reviews were detected correctly.
