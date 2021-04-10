@@ -66,7 +66,7 @@ Another thing that we can conclude from the plot is that rating distribution is 
 ### Step 3: Biulding prediction model with BERT
 In this section we do necessary preparation of data for modeling:
 - drop rows without ratings and without review text, 
-- prepare target variable ‘review_sentiment, 
+- prepare target variable review_sentiment in the required format, 
 - perform train/test split,
 - perform preprocessing with Bert mode.
 
