@@ -132,7 +132,7 @@ However, after predicting sentiment for the reviews without rating and inspectin
 Model predicts that 41% of the reviews without rating contain negative sentiment and 59% contain positive sentiment. While among reviews with filled rating  - there are only 23% of reviews with negative sentiment (almost twice less).
 By adding sentiment classified by the model to the table with sentiment calculated from the rating set by customers, we can see that fraction of negative class in overall data increased from 23% to 29%.
 
-###Possible ways to improve model performance:
+### Possible ways to improve model performance:
 
 •	Load more reviews data,
 •	Increase number of epochs,
