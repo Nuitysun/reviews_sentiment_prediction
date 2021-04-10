@@ -105,8 +105,12 @@ In this section we check perfomace of BERT model v2 :
 - predict sentiment for reviews without rating, 
 - manually check predicted sentiments for reviews,
 - plot distribution of reviews by sentiment (positive/negative) for:
-![only data with filled review_rating](/reviews_sentiment_calculated from review_rating.png) 
-- sentiment was calculated from review_rating values,
+-- only data with filled review_rating - sentiment was calculated from review_rating values: 
+
+![review_with_rating](/reviews_sentiment_calculated from review_rating.png) 
+
+
+
 ![for all data](/reviews_sentiment_calculated from review_rating+prediction) 
 -  sentiment was calculated from review_rating or predicted by model.
 
