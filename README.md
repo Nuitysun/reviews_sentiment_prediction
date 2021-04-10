@@ -21,7 +21,7 @@ If percentage of such reviews without rating is significant - it may be useful t
 The goal of this project is to check the feasibility of the idea and if it's possible to build a model to predict a sentiment of the  reviews with the high enough accuracy. Here we will focus on reviews of Smartphones product category.
 It's also possible to apply the same approach to other product categories, but it's advisable to train separate models for different categories so a model can learn specifics in reviews of particular product category.
 
-**Few words about marketplace Rozetka.ua which data we will explore** :
+## Few words about marketplace Rozetka.ua which data we will explore 
 Rozetka.ua is a Ukrainian online store and marketplace that was founded in 2005. As of August 2020, the site ranks 7th among the most visited in Ukraine. 
 Initially, the store sold household appliances and electronics, but today you can find there many more categories of products - from clothing to food. A total of 3.9 million products are presented on the site. It is visited daily by 2.5 million people. Such success was achieved through the involvement of third-party sellers - they generate 25% of sales at Rozetka. 
 
