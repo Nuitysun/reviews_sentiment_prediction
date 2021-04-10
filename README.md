@@ -49,8 +49,9 @@ In this section following steps are performed:
 ### Step 2: Exploratory data analysis
 In this section we explore:
 - review_rating variable,
-> &nbsp;&nbsp;&nbsp;&nbsp; Below is the plot with review_ratings values. We can see from it that significant proportion, about 32%, of reviews, don't have filled rating (0 value). So the task of predicting sentiment for 1/3 of all reviews that currently are not classified can be useful. 
-Another thing that we can conclude – is that rating distribution in imbalanced – there are much more positive reviews than negative.
+> &nbsp;&nbsp;&nbsp;&nbsp; Below is the plot with review_ratings values. 
+We can see that a big proportion, about 32%, of reviews, don't have filled rating (0 value). So predicting sentiment for reviews without rating can be useful as it will allow to add classification for significant part of the data.
+Another thing that we can conclude from the plot is that rating distribution is imbalanced – there are much more positive reviews than negative.
 
 > &nbsp;&nbsp;&nbsp;&nbsp; ![review_rating values](/review_rating_values.png)
 
