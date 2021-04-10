@@ -16,8 +16,9 @@
 The project is focusing on exploration of smartphone reviews data from Ukrainian eCommerce marketplace Rozetka.ua and building model to predict sentiment of reviews.
 
 After inspecting the web-site https://rozetka.com.ua/ I noticed that not all reviews have rating. 
-If the amount of such reviews without rating is significant - it may be useful to build a prediction model to fill in missing ratings which will allow to see more complete picture of overall sentiment of Ukrainian consumers toward specific product categories, brands, products within specific price range, etc. Also, it can be useful information for marketplace to get more complete statistics on customers satisfaction with products/services. 
-The purpose of this project is to check the feasibility of the idea and if it's possible to build a model to predict a sentiment of the  reviews with the high enough accuracy. Here we will focus on reviews of Smartphones product category.
+If percentage of such reviews without rating is significant - it may be useful to build a prediction model to fill in missing ratings which will allow to see more complete picture of overall sentiment of Ukrainian consumers toward specific product categories, brands, products within specific price range, etc. Also, it can be useful information for marketplace to get more complete statistics on customers satisfaction with products/services. 
+
+The goal of this project is to check the feasibility of the idea and if it's possible to build a model to predict a sentiment of the  reviews with the high enough accuracy. Here we will focus on reviews of Smartphones product category.
 It's also possible to apply the same approach to other product categories, but it's advisable to train separate models for different categories so a model can learn specifics in reviews of particular product category.
 
 **Few words about marketplace Rozetka.ua which data we will explore** :
