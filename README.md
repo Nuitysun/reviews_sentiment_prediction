@@ -59,9 +59,9 @@ Another thing that we can conclude from the plot is that rating distribution is 
 - review_date VS review_date correlation,
 - distribution of review_text by language in which they are written,
 - TOP10 Unigrams, Bigrams, Trigrams of review_text variable,
-- meta Features analysis of review_text variable,
-- meta Features analysis of product_advatages variable,
-- meta Features analysis of product_disadvantages variable.
+- meta features analysis of review_text variable,
+- meta features analysis of product_advatages variable,
+- meta features analysis of product_disadvantages variable.
 
 ### Step 3: Biulding prediction model with BERT
 In this section we do necessary preparation of data for modeling:
