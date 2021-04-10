@@ -63,7 +63,7 @@ Another thing that we can conclude from the plot is that rating distribution is 
 - meta features analysis of product_advatages variable,
 - meta features analysis of product_disadvantages variable.
 
-### Step 3: Biulding prediction model with BERT
+### Step 3: Building prediction model with BERT
 In this section we do necessary preparation of data for modeling:
 - drop rows without ratings and without review text, 
 - prepare target variable review_sentiment in the required format, 
@@ -95,7 +95,7 @@ In this section we:
 Oversample negative class in the initial data to remove class imbalance in target variable and train BERT model version 2. 
 
 ### Step 7: Running BERT model v2 and evaluating model performance
-In this section we check perfomace of BERT model v2 :
+In this section we check performance of BERT model v2 :
 - check accuracy and confusion matrix on **training set**,
 > - Accuracy - 89%.
 > - Predictions for positive reviews are more accurate: 93% of all predicted reviews are actually positive and 92% of all positive reviews were detected correctly.
