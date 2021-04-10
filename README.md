@@ -2,13 +2,13 @@
 
 ## Technical requirements
 **This project was implemented using:**
-- Jupiter notebook-6.0.3
--  Python
+- Jupiter notebook - 6.0.3
+-  Python - 3.8.3
 - Python modules installed:
 <pre>
-!pip install dateparser 
-!pip install advertools
-!pip install git+https://github.com/amaiya/eli5@tfkeras_0_10_1
+dateparser - 1.0.0
+advertools -  0.10.7
+git+https://github.com/amaiya/eli5@tfkeras_0_10_1
 </pre>
 
 
