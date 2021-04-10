@@ -27,7 +27,7 @@ Initially, the store sold household appliances and electronics, but today you ca
 
 Being one of the biggest marketplaces in Ukraine, Rozetka.ua also became a site with the biggest number of reviews from Ukrainian consumers on wide range of products. This combined with fast and seamless service is allowing Rozetka to retain leading positions in Ukrainian eCommerce retail market.
 
-## Data collection
+### Data collection
 The first step is to retrieve the product reviews data. 
 The search for possibility to export reviews from web-site or to use exciting browser extension/plugin didn't bring results, so it was decided to collect the data using web-scraping (scrappy module in python).
 The script which retrieves necessary data and writes it into the “smartphone\_reviews _{current_date}.csv” file is located in separate jupiter notebook **“Scraping_reviews.ipynb”**.
