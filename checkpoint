@@ -1,2 +1,0 @@
-model_checkpoint_path: "sentiment_prediction"
-all_model_checkpoint_paths: "sentiment_prediction"
