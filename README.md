@@ -135,14 +135,15 @@ By adding sentiment classified by the model to the table with sentiment calculat
 ### Possible ways to improve model performance:
 
 -	Load more reviews data,
--	Increase number of epochs,
--	As on the unrated data all errors are false positive, it can be useful to try to oversample reviews with negative sentiment, so their proportion is even bigger. It can help model to learn more about negative class.
+-	Increase number of epochs during model training,
+-	As on the unrated data all errors are false positive, it can be useful to try to oversample reviews with negative sentiment, so negative class proportion is even bigger than for positive class. It can help model to learn more about negative class.
 -	Clean the data to remove questions/statements and feedback about shop.
 
 ### Ideas for the next steps:
 
 It is important to consider is that reviews records sometimes doesn't contain actual review of the product, but rather feedback about shop/service or questions. 
 It may be useful to explore how to classify reviews into categories: product review, service feedback, question (record can have category product review and service feedback at the same time). 
+
 This way it will be possible to refine statistics about sentiment regarding products. Also, it may be useful to analyze what sentiment customers express about marketplace itself and service received. The next step could be classifying feedback about service in the categories: with what customers are satisfied and what they complain about.
 
 
