@@ -123,7 +123,8 @@ If we compare data with only filled rating and all data (with predicted sentimen
 
 In this project we retrieved and explored reviews data from the web-site Rozetka.ua.
 We were able to build a model to predict reviews sentiment that performed quite well on the training set and showed good results on the unseen data: it predicted correct sentiment for 95% of reviews in testing set.
-Although, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 70-85%. Content of reviews are often confusing, model doesn’t always identify sentiment correctly and sometimes it’s hard to identify it even with manual check.
+
+However, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 70-85%. Content of reviews are often confusing, model doesn’t always identify sentiment correctly and sometimes it’s hard to identify it even with manual check.
 Results of sentiment prediction for reviews without rating:
 Model predicts that 41% of reviews without rating contain negative sentiment, while for reviews with rating it is only 23% (almost twice less). By adding sentiment classified by the model to the table with sentiment calculated from the rating set by customers, we can see that fraction of negative class in overall data increased from 23% to 29% .
 
