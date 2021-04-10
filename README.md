@@ -36,7 +36,7 @@ The script which retrieves necessary data and writes it into the “smartphone\_
 Here we will proceed with the data generated with the scrapy module functionality as it should be enough for purposes of this project.*
 
 ## Data preparation/analysis and predicting sentiment with BERTmodel
-Script related to this section  is located in separate jupiter notebook **"Predicting reviews sentiment with Bert model.ipynb”**.
+Script related to this section  is located in separate jupiter notebook **"Predicting_reviews_sentiment_with_Bert_model.ipynb”**.
 ### Step 1: Read dataset and perform basic preprocessing
 In this section following steps are performed:
 - read datasets from the root folder, 
@@ -75,15 +75,16 @@ After preprocessing is done we build BERT model, explore best learning rate with
 ### Step 4: Evaluating model performance
 In this section we:
 - check accuracy and confusion matrix on **training set**,
->- Accuracy - 89%.
-> - Predictions for positive reviews are more accurate: 93% of all predicted reviews are actually  positive and 92% of all positive reviews were detected correctly.
-> -  Predictions for negative reviews are less accurate: only 76% of all predicted reviews are actually negative and 80% of all negative reviews were detected correctly.
+>- Accuracy - 90%.
+> - Predictions for positive reviews are much more accurate: 94% of all predicted reviews are actually  positive and 93% of all positive reviews were detected correctly.
+> -  Predictions for negative reviews are less accurate: only 78% of all predicted reviews are actually negative and 79% of all negative reviews were detected correctly.
 - check 5 top losses of the model on training set,
 - make predictions and check accuracy and confusion matrix on **testing set**.
->- Accuracy - 89%. 
->- Area Under the Receiver Operating Characteristic Curve on test dataset is 0.87, so there is a 87% chance that the model will be able to distinguish between positive and negative class for reviews.
-> - Predictions for positive reviews are quite accurate: almost 95% of all predicted reviews are actually positive and 90% of all positive reviews were detected correctly.
-> - Predictions for negative reviews are less accurate: only 73% of all predicted reviews are truly negative and 84% of all negative reviews were detected correctly.
+>- Accuracy - 87%. 
+>- Area Under the Receiver Operating Characteristic Curve on test dataset is 0.79, so there is a 79.3% chance that the model will be able to distinguish between positive and negative class for reviews.
+> - Predictions for positive reviews are quite accurate: almost 94% of all predicted reviews are actually positive and 89% of all positive reviews were detected correctly.
+> - Predictions for negative reviews are less accurate: only 64% of all predicted reviews are truly negative and 77% of all negative reviews were detected correctly.
+> We can see from the results that model is biased for predicting positive class as proportion of positive reviews in the training data is much bigger (77% for positive reviews).
 
 
 ### Step 5: Predict sentiment for reviews without rating
