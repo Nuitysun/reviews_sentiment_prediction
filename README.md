@@ -125,12 +125,21 @@ If we compare data with only filled rating and all data (with predicted sentimen
 In this project we retrieved and explored reviews data from the web-site Rozetka.ua.
 We were able to build a model to predict reviews sentiment that performed quite well on the training set and showed good results on the unseen data: it predicted correct sentiment for 98% of reviews in testing set.
 
-However, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 70-85%. Content of reviews are often confusing, model doesn’t always identify sentiment correctly and sometimes it’s hard to identify it even with manual check.
+However, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 75%. Content of reviews are often confusing, model doesn’t always identify sentiment correctly and sometimes it’s hard to identify it even with manual check.
 
 **Results of sentiment prediction for reviews without rating:**
 Model predicts that 41% of the reviews without rating contain negative sentiment and 59% contain positive sentiment. While among reviews with filled rating  - there are only 23% of reviews with negative sentiment (almost twice less).
 By adding sentiment classified by the model to the table with sentiment calculated from the rating set by customers, we can see that fraction of negative class in overall data increased from 23% to 29%.
 
-Another aspect that is important to consider is that reviews records sometimes doesn't contain actual review of the product, but rather feedback about shop/service or questions. 
-To improve the results, I would suggest to explore how to classify reviews into categories: product review, service feedback, question (record can have category product review and service feedback at the same time). 
-This way it will be possible to refine statistics about sentiment regarding products. Also, it may be useful to analyze what sentiment customers express about marketplace itself and service received. The next step could be classifying feedback about service in the categories: with what customers are satisfied and what they complain about. 
+**Possible ways to improve model performance:**
+•	Load more reviews data,
+•	Increase number of epochs,
+•	As on the unrated data all errors are false positive, it can be useful to try to oversample reviews with negative sentiment, so their proportion is even bigger. It can help model to learn more about negative class.
+•	Clean the data to remove questions/statements and feedback about shop.
+
+**Ideas for the next steps:**
+It is important to consider is that reviews records sometimes doesn't contain actual review of the product, but rather feedback about shop/service or questions. 
+It may be useful to explore how to classify reviews into categories: product review, service feedback, question (record can have category product review and service feedback at the same time). 
+This way it will be possible to refine statistics about sentiment regarding products. Also, it may be useful to analyze what sentiment customers express about marketplace itself and service received. The next step could be classifying feedback about service in the categories: with what customers are satisfied and what they complain about.
+
+
