@@ -47,12 +47,10 @@ In this section following steps are performed:
 ### Step 2: Exploratory data analysis
 In this section we explore:
 - review_rating variable,
-
-The plot with ![review_rating values](/review_rating_values.png)
-
-
-We can see from it that significant proportion, about 32%, of reviews don't have filled rating (0 value). So the task of predicting sentiment for 1/3 of all reviews that currently are not classified can be useful. 
+Below is the plot with review_ratings values. We can see from it that significant proportion, about 32%, of reviews, don't have filled rating (0 value). So the task of predicting sentiment for 1/3 of all reviews that currently are not classified can be useful. 
 Another thing that we can conclude – is that rating distribution in imbalanced – there are much more positive reviews than negative.
+
+![review_rating values](/review_rating_values.png)
 
 - product_price VS review_rating correlation,
 - review_date VS review_date correlation,
@@ -107,8 +105,10 @@ In this section we check perfomace of BERT model v2 :
 - predict sentiment for reviews without rating, 
 - manually check predicted sentiments for reviews,
 - plot distribution of reviews by sentiment (positive/negative) for:
--- ![only data with filled review_rating](/reviews_sentiment_calculated from review_rating.png) - sentiment was calculated from review_rating values,
--- ![for all data](/reviews_sentiment_calculated from review_rating+prediction) -  sentiment was calculated from review_rating or predicted by model.
+-- ![only data with filled review_rating](/reviews_sentiment_calculated from review_rating.png) 
+- sentiment was calculated from review_rating values,
+-- ![for all data](/reviews_sentiment_calculated from review_rating+prediction) 
+-  sentiment was calculated from review_rating or predicted by model.
 
 ## Conclusion
 
