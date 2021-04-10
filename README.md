@@ -28,13 +28,13 @@ Being one of the biggest marketplaces in Ukraine, Rozetka.ua also became a site 
 ## Data collection
 The first step is to retrieve the product reviews data. 
 The search for possibility to export reviews from web-site or to use exciting browser extension/plugin didn't bring results, so it was decided to collect the data using web-scraping (scrappy module in python).
-The script which retrieves necessary data and writes it into the ìsmartphone\_reviews _{current_date}.csvî file is located in separate jupiter notebook **ìScraping_reviews.ipynbî**.
+The script which retrieves necessary data and writes it into the ‚Äúsmartphone\_reviews _{current_date}.csv‚Äù file is located in separate jupiter notebook **‚ÄúScraping_reviews.ipynb‚Äù**.
 
-*Note: the developed  web-scraping script does not retrieve all available reviews. It is caused by the fact that web-pages are generated dynamically with ìShow moreî button. To solve this problem, itís necessary to use tools like Selenium, which can interact with web-pages to get full data previously to parsing html. 
+*Note: the developed  web-scraping script does not retrieve all available reviews. It is caused by the fact that web-pages are generated dynamically with ‚ÄúShow more‚Äù button. To solve this problem, it‚Äôs necessary to use tools like Selenium, which can interact with web-pages to get full data previously to parsing html. 
 Here we will proceed with the data generated with the scrapy module functionality as it should be enough for purposes of this project.*
 
 ## Data preparation/analysis and predicting sentiment with BERTmodel
-Script related to this section  is located in separate jupiter notebook **"Predicting reviews sentiment with Bert model.ipynbî**.
+Script related to this section  is located in separate jupiter notebook **"Predicting reviews sentiment with Bert model.ipynb‚Äù**.
 ### Step 1: Read dataset and perform basic preprocessing
 In this section following steps are performed:
 - read datasets from the root folder, 
@@ -49,8 +49,10 @@ In this section we explore:
 - review_rating variable,
 
 The plot with ![review_rating values](/review_rating_values.png)
+
+
 We can see from it that significant proportion, about 32%, of reviews don't have filled rating (0 value). So the task of predicting sentiment for 1/3 of all reviews that currently are not classified can be useful. 
-Another thing that we can conclude ñ is that rating distribution in imbalanced ñ there are much more positive reviews than negative.
+Another thing that we can conclude ‚Äì is that rating distribution in imbalanced ‚Äì there are much more positive reviews than negative.
 
 - product_price VS review_rating correlation,
 - review_date VS review_date correlation,
@@ -63,7 +65,7 @@ Another thing that we can conclude ñ is that rating distribution in imbalanced ñ
 ### Step 3: Biulding prediction model with BERT
 In this section we do necessary preparation of data for modeling:
 - drop rows without ratings and without review text, 
-- prepare target variable ëreview_sentiment, 
+- prepare target variable ‚Äòreview_sentiment, 
 - perform train/test split,
 - perform preprocessing with Bert mode.
 
@@ -112,7 +114,7 @@ In this section we check perfomace of BERT model v2 :
 
 In this project we retrieved and explored reviews data from the web-site Rozetka.ua.
 We were able to build a model to predict reviews sentiment that performed quite well on the training set and showed good results on the unseen data: it predicted correct sentiment for 95% of reviews in testing set.
-Although, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 70-85%. Content of reviews are often confusing, model doesnít always identify sentiment correctly and sometimes itís hard to identify it even with manual check.
+Although, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 70-85%. Content of reviews are often confusing, model doesn‚Äôt always identify sentiment correctly and sometimes it‚Äôs hard to identify it even with manual check.
 Results of sentiment prediction for reviews without rating:
 Model predicts that 41% of reviews without rating contain negative sentiment, while for reviews with rating it is only 23% (almost twice less). By adding sentiment classified by the model to the table with sentiment calculated from the rating set by customers, we can see that fraction of negative class in overall data increased from 23% to 29% .
 
