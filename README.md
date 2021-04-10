@@ -76,14 +76,14 @@ After preprocessing is done we build BERT model, explore best learning rate with
 In this section we:
 - check accuracy and confusion matrix on **training set**,
 >- Accuracy - 89%.
-> - Predictions for positive reviews are more precise: 93% of all predicted reviews are actually  positive and 92% of all positive reviews were detected correctly.
-> -  Predictions for negative reviews are less precise: only 76% of all predicted reviews are actually negative and 80% of all negative reviews were detected correctly.
+> - Predictions for positive reviews are more accurate: 93% of all predicted reviews are actually  positive and 92% of all positive reviews were detected correctly.
+> -  Predictions for negative reviews are less accurate: only 76% of all predicted reviews are actually negative and 80% of all negative reviews were detected correctly.
 - check 5 top losses of the model on training set,
 - make predictions and check accuracy and confusion matrix on **testing set**.
 >- Accuracy - 89%. 
 >- Area Under the Receiver Operating Characteristic Curve on test dataset is 0.87, so there is a 87% chance that the model will be able to distinguish between positive and negative class for reviews.
-> - Predictions for positive reviews are quite precise: almost 95% of all predicted reviews are actually positive and 90% of all positive reviews were detected correctly.
-> - Predictions for negative reviews are less precise: only 73% of all predicted reviews are truly negative and 84% of all negative reviews were detected correctly.
+> - Predictions for positive reviews are quite accurate: almost 95% of all predicted reviews are actually positive and 90% of all positive reviews were detected correctly.
+> - Predictions for negative reviews are less accurate: only 73% of all predicted reviews are truly negative and 84% of all negative reviews were detected correctly.
 
 
 ### Step 5: Predict sentiment for reviews without rating
@@ -98,13 +98,13 @@ Oversample negative class in the initial data to remove class imbalance in targe
 In this section we check perfomace of BERT model v2 :
 - check confusion matrix, accuracy, precision and recall metrics on **training set**,
 > - Accuracy - 89%.
-> - Predictions for positive reviews are more precise: 93% of all predicted reviews are actually positive and 92% of all positive reviews were detected correctly.
-> -  Predictions for negative reviews are less precise: only 76% of all predicted reviews are actually negative and 80% of all negative reviews were detected correctly.
+> - Predictions for positive reviews are more accurate: 93% of all predicted reviews are actually positive and 92% of all positive reviews were detected correctly.
+> -  Predictions for negative reviews are less accurate: only 76% of all predicted reviews are actually negative and 80% of all negative reviews were detected correctly.
 - make predictions and check confusion matrix, accuracy, precision and recall metrics on **testing set**,
 > - Accuracy - 89%. 
 >- Area Under the Receiver Operating Characteristic Curve on test dataset is 0.87, so there is a 87.2% chance that the model will be able to distinguish between positive and negative class for reviews.
-> - Predictions for positive reviews are quite precise: almost 95% of all predicted reviews are actually positive and 90% of all positive reviews were detected correctly.
-> - Predictions for negative reviews are less precise: only 73% of all predicted reviews are truly negative and 84% of all negative reviews were detected correctly.
+> - Predictions for positive reviews are quite accurate: almost 95% of all predicted reviews are actually positive and 90% of all positive reviews were detected correctly.
+> - Predictions for negative reviews are less accurate: only 73% of all predicted reviews are truly negative and 84% of all negative reviews were detected correctly.
 - predict sentiment for reviews without rating, 
 - manually check predicted sentiments for reviews,
 - plot distribution of reviews by sentiment (positive/negative) for:
