@@ -11,6 +11,7 @@ advertools -  0.10.7
 git+https://github.com/amaiya/eli5@tfkeras_0_10_1
 </pre>
 
+[link](insturctions.md)
 
 ## Short description of the project 
 The project is focusing on exploration of smartphone reviews data from Ukrainian eCommerce marketplace Rozetka.ua and building model to predict sentiment of reviews.
@@ -30,13 +31,13 @@ Being one of the biggest marketplaces in Ukraine, Rozetka.ua also became a site 
 ### Data collection
 The first step is to retrieve the product reviews data. 
 The search for possibility to export reviews from web-site or to use exciting browser extension/plugin didn't bring results, so it was decided to collect the data using web-scraping (scrappy module in python).
-The script which retrieves necessary data and writes it into the “smartphone\_reviews _{current_date}.csv” file is located in separate jupiter notebook **“Scraping_reviews.ipynb”**.
+The script which retrieves necessary data and writes it into the ï¿½smartphone\_reviews _{current_date}.csvï¿½ file is located in separate jupiter notebook **ï¿½Scraping_reviews.ipynbï¿½**.
 
-*Note: the developed  web-scraping script does not retrieve all available reviews. It is caused by the fact that web-pages are generated dynamically with “Show more” button. To solve this problem, it’s necessary to use tools like Selenium, which can interact with web-pages to get full data previously to parsing html. 
+*Note: the developed  web-scraping script does not retrieve all available reviews. It is caused by the fact that web-pages are generated dynamically with ï¿½Show moreï¿½ button. To solve this problem, itï¿½s necessary to use tools like Selenium, which can interact with web-pages to get full data previously to parsing html. 
 Here we will proceed with the data generated with the scrapy module functionality as it should be enough for purposes of this project.*
 
 ## Data preparation/analysis and predicting sentiment with BERTmodel
-Script related to this section  is located in separate jupiter notebook **"Predicting_reviews_sentiment_with_Bert_model.ipynb”**.
+Script related to this section  is located in separate jupiter notebook **"Predicting_reviews_sentiment_with_Bert_model.ipynbï¿½**.
 ### Step 1: Read dataset and perform basic preprocessing
 In this section following steps are performed:
 - read datasets from the root folder, 
@@ -51,7 +52,7 @@ In this section we explore:
 - review_rating variable,
 > &nbsp;&nbsp;&nbsp;&nbsp; Below is the plot with review_ratings values. 
 We can see that a big proportion, about 32%, of reviews, don't have filled rating (0 value). So predicting sentiment for reviews without rating can be useful as it will allow to add classification for significant part of the data.
-Another thing that we can conclude from the plot is that rating distribution is imbalanced – there are much more positive reviews (values 4 and 5) than negative.
+Another thing that we can conclude from the plot is that rating distribution is imbalanced ï¿½ there are much more positive reviews (values 4 and 5) than negative.
 
 > &nbsp;&nbsp;&nbsp;&nbsp; ![review_rating values](./images/review_rating_values.png)
 
@@ -125,7 +126,7 @@ If we compare data with only filled rating and all data (with predicted sentimen
 In this project we retrieved and explored reviews data from the web-site Rozetka.ua.
 We were able to build a model to predict reviews sentiment that performed quite well on the training set and showed good results on the unseen data: it predicted correct sentiment for 98% of reviews in testing set.
 
-However, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 75%. Content of reviews are often confusing, model doesn’t always identify sentiment correctly and sometimes it’s hard to identify it even with manual check.
+However, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 75%. Content of reviews are often confusing, model doesnï¿½t always identify sentiment correctly and sometimes itï¿½s hard to identify it even with manual check.
 
 ### Results of sentiment prediction for reviews without rating:
 
