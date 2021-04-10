@@ -23,7 +23,8 @@ It's also possible to apply the same approach to other product categories, but i
 
 **Few words about marketplace Rozetka.ua which data we will explore** :
 Rozetka.ua is a Ukrainian online store and marketplace that was founded in 2005. As of August 2020, the site ranks 7th among the most visited in Ukraine. 
-Initially, the store sold household appliances and electronics, but today you can find there many more categories of products - from clothing to food. A total of 3.9 million products are presented on the site. It is visited daily by 2.5 million people. Such success was achieved through the involvement of third-party sellers - they generate 25% of sales at Rozetka. In addition to the marketplace, Rozetka has launched its own network of retail stores, delivers to its post offices and mobile delivery points, and entered the international market.
+Initially, the store sold household appliances and electronics, but today you can find there many more categories of products - from clothing to food. A total of 3.9 million products are presented on the site. It is visited daily by 2.5 million people. Such success was achieved through the involvement of third-party sellers - they generate 25% of sales at Rozetka. 
+
 Being one of the biggest marketplaces in Ukraine, Rozetka.ua also became a site with the biggest number of reviews from Ukrainian consumers on wide range of products. This combined with fast and seamless service is allowing Rozetka to retain leading positions in Ukrainian eCommerce retail market.
 
 ## Data collection
