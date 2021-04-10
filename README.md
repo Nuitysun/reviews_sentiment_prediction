@@ -90,7 +90,7 @@ In this section we:
 ### Step 5: Predict sentiment for reviews without rating
 In this section we:
 - predict sentiment for reviews without rating, 
-- manually check predicted sentiments for reviews.
+- manually check predicted sentiments for reviews: accuracy of 40 manually checked records is 62.5% (93% of errors are false positive).
 
 ### Step 6: Building BERT model v2
 Oversample negative class in the initial data to remove class imbalance in target variable and train BERT model version 2. 
@@ -98,16 +98,16 @@ Oversample negative class in the initial data to remove class imbalance in targe
 ### Step 7: Running BERT model v2 and evaluating model performance
 In this section we check performance of BERT model v2 :
 - check accuracy and confusion matrix on **training set**,
-> - Accuracy - 89%.
-> - Predictions for positive reviews are more accurate: 93% of all predicted reviews are actually positive and 92% of all positive reviews were detected correctly.
-> -  Predictions for negative reviews are less accurate: only 76% of all predicted reviews are actually negative and 80% of all negative reviews were detected correctly.
+> - Accuracy - 97%.
+> - Predictions for positive reviews are more accurate: 91% of all predicted reviews are actually positive and 99% of all positive reviews were detected correctly.
+> -  Predictions for negative reviews are:  100% of all predicted reviews are actually negative and 97% of all negative reviews were detected correctly.
 - make predictions and check accuracy and confusion matrix on **testing set**,
-> - Accuracy - 89%. 
->- Area Under the Receiver Operating Characteristic Curve on test dataset is 0.87, so there is a 87.2% chance that the model will be able to distinguish between positive and negative class for reviews.
-> - Predictions for positive reviews are quite accurate: almost 95% of all predicted reviews are actually positive and 90% of all positive reviews were detected correctly.
-> - Predictions for negative reviews are less accurate: only 73% of all predicted reviews are truly negative and 84% of all negative reviews were detected correctly.
+> - Accuracy - 98%. 
+>- Area Under the Receiver Operating Characteristic Curve on test dataset is 0.97, so there is a 97.7% chance that the model will be able to distinguish between positive and negative class for reviews.
+> - Predictions for positive reviews are quite accurate: almost 97% of all predicted reviews are actually positive and 94% of all positive reviews were detected correctly.
+> - Predictions for negative reviews are:  98% of all predicted reviews are truly negative and 99% of all negative reviews were detected correctly.
 - predict sentiment for reviews without rating, 
-- manually check predicted sentiments for reviews,
+- manually check predicted sentiments for reviews: accuracy of 40 manually checked records is 75% (100% of errors are false positive),
 - plot distribution of reviews by sentiment (positive/negative) for:
 - - only data with filled review_rating: sentiment was calculated from review_rating values
 
