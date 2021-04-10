@@ -126,7 +126,7 @@ We were able to build a model to predict reviews sentiment that performed quite 
 
 However, after predicting sentiment for the reviews without rating and inspecting 40 predictions - we can see that accuracy seems to be much less for them, about 70-85%. Content of reviews are often confusing, model doesn’t always identify sentiment correctly and sometimes it’s hard to identify it even with manual check.
 
-*Results of sentiment prediction for reviews without rating*:
+**Results of sentiment prediction for reviews without rating:**
 Model predicts that 41% of the reviews without rating contain negative sentiment and 59% contain positive sentiment. While among reviews with filled rating  - there are only 23% of reviews with neganive sentiment (almost twice less).
 By adding sentiment classified by the model to the table with sentiment calculated from the rating set by customers, we can see that fraction of negative class in overall data increased from 23% to 29%.
 
