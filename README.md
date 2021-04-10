@@ -84,7 +84,7 @@ In this section we:
 >- Area Under the Receiver Operating Characteristic Curve on test dataset is 0.79, so there is a 79.3% chance that the model will be able to distinguish between positive and negative class for reviews.
 > - Predictions for positive reviews are quite accurate: almost 94% of all predicted reviews are actually positive and 89% of all positive reviews were detected correctly.
 > - Predictions for negative reviews are less accurate: only 64% of all predicted reviews are truly negative and 77% of all negative reviews were detected correctly.
-> We can see from the results that model is biased for predicting positive class as proportion of positive reviews in the training data is much bigger (77% for positive reviews).
+> - We can see from the results that model is biased for predicting positive class as proportion of positive reviews in the training data is much bigger (77% for positive reviews).
 
 
 ### Step 5: Predict sentiment for reviews without rating
