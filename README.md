@@ -53,7 +53,7 @@ In this section we explore:
 We can see that a big proportion, about 32%, of reviews, don't have filled rating (0 value). So predicting sentiment for reviews without rating can be useful as it will allow to add classification for significant part of the data.
 Another thing that we can conclude from the plot is that rating distribution is imbalanced – there are much more positive reviews (values 4 and 5) than negative.
 
-> &nbsp;&nbsp;&nbsp;&nbsp; ![review_rating values](/review_rating_values.png)
+> &nbsp;&nbsp;&nbsp;&nbsp; ![review_rating values](./images/review_rating_values.png)
 
 - product_price VS review_rating correlation,
 - review_date VS review_date correlation,
@@ -111,11 +111,11 @@ In this section we check performance of BERT model v2 :
 - plot distribution of reviews by sentiment (positive/negative) for:
 - - only data with filled review_rating: sentiment was calculated from review_rating values
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![review_with_rating](/reviews_sentiment_calculated_from_review_rating.png) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![review_with_rating](./images/reviews_sentiment_calculated_from_review_rating.png) 
  
  - - all data: sentiment was calculated from review_rating or predicted by model
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![for_all data](/reviews_sentiment_calculated_from_review_rating_prediction.png) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![for_all data](./images/reviews_sentiment_calculated_from_review_rating_prediction.png) 
 
 >From the plots above we can see that the model predicts bigger fraction of negative sentiment reviews among records without filled rating in comparison to reviews with rating.
 If we compare data with only filled rating and all data (with predicted sentiment), we can see that fraction of positive sentiment reviews drops by 5.9% (from 76.8% to 70.9%).
