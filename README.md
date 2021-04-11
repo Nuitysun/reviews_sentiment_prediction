@@ -26,7 +26,7 @@ The script which retrieves necessary data and writes it into the `smartphone_rev
 Here we will proceed with the data generated with the scrapy module functionality as it should be enough for purposes of this project.*
 
 ## Data preparation/analysis and predicting sentiment with BERTmodel
-Script related to this section  is located in separate jupiter notebook **"Predicting_reviews_sentiment_with_Bert_model.ipynb**.
+Script related to this section  is located in separate jupiter notebook **Predicting_reviews_sentiment_with_Bert_model.ipynb**.
 ### Step 1: Read dataset and perform basic preprocessing
 In this section following steps are performed:
 - read datasets from the `./reviews_data` folder, 
