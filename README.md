@@ -20,9 +20,9 @@ Being one of the biggest marketplaces in Ukraine, Rozetka.ua also became a site 
 ### Data collection
 The first step is to retrieve the product reviews data. 
 The search for possibility to export reviews from web-site or to use exciting browser extension/plugin didn't bring results, so it was decided to collect the data using web-scraping (scrappy module in python).
-The script which retrieves necessary data and writes it into the �smartphone\_reviews _{current_date}.csv� file is located in separate jupiter notebook **�Scraping_reviews.ipynb�**.
+The script which retrieves necessary data and writes it into the "smartphone\_reviews _{current_date}.csv" file is located in separate jupiter notebook **�Scraping_reviews.ipynb�**.
 
-*Note: the developed  web-scraping script does not retrieve all available reviews. It is caused by the fact that web-pages are generated dynamically with �Show more� button. To solve this problem, it�s necessary to use tools like Selenium, which can interact with web-pages to get full data previously to parsing html. 
+*Note: the developed  web-scraping script does not retrieve all available reviews. It is caused by the fact that web-pages are generated dynamically with "Show more" button. To solve this problem, it's necessary to use tools like Selenium, which can interact with web-pages to get full data previously to parsing html. 
 Here we will proceed with the data generated with the scrapy module functionality as it should be enough for purposes of this project.*
 
 ## Data preparation/analysis and predicting sentiment with BERTmodel
@@ -41,7 +41,7 @@ In this section we explore:
 - review_rating variable,
 > &nbsp;&nbsp;&nbsp;&nbsp; Below is the plot with review_ratings values. 
 We can see that a big proportion, about 32%, of reviews, don't have filled rating (0 value). So predicting sentiment for reviews without rating can be useful as it will allow to add classification for significant part of the data.
-Another thing that we can conclude from the plot is that rating distribution is imbalanced � there are much more positive reviews (values 4 and 5) than negative.
+Another thing that we can conclude from the plot is that rating distribution is imbalanced - there are much more positive reviews (values 4 and 5) than negative.
 
 > &nbsp;&nbsp;&nbsp;&nbsp; ![review_rating values](./images/review_rating_values.png)
 
