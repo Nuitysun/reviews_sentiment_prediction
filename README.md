@@ -11,7 +11,7 @@ advertools -  0.10.7
 git+https://github.com/amaiya/eli5@tfkeras_0_10_1
 </pre>
 
-[link](insturctions.md)
+[link](instructions.md)
 
 ## Short description of the project 
 The project is focusing on exploration of smartphone reviews data from Ukrainian eCommerce marketplace Rozetka.ua and building model to predict sentiment of reviews.
