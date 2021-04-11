@@ -4,12 +4,7 @@
 
 * Install Jupiter notebook (for this project version 6.0.3 was used)
 * Check Python version (for this project version 3.8.3 was used)
-<pre>
-from platform import python_version
-
-print(python_version())
-</pre>
-* Install required Python modules
+* Install required Python modules via Jupiter notebook:
 <pre>
 !pip install dateparser==1.0.0
 !pip install advertools==0.10.7
