@@ -20,12 +20,12 @@ Being one of the biggest marketplaces in Ukraine, Rozetka.ua also became a site 
 ### Data collection
 The first step is to retrieve Smartphones reviews data. 
 The search for possibility to export reviews from web-site or to use exciting browser extension/plugin didn't bring results, so it was decided to collect the data using web-scraping (`scrappy` module in `python`).
-The script which retrieves necessary data and writes it into the `smartphone_reviews_{current_date}.csv` file is located in separate jupiter notebook **Scraping_reviews.ipynb**.
+The script which retrieves necessary data and writes it into the `smartphone_reviews_{current_date}.csv` file is located in separate Jupiter notebook **Scraping_reviews.ipynb**.
 
 *Note: the developed  web-scraping script does not retrieve all available reviews. It is caused by the fact that web-pages are generated dynamically with "Show more" button. To solve this problem, it's necessary to use tools like Selenium, which can interact with web-pages to get full data previously to parsing html. 
 Here we will proceed with the data generated with the scrapy module functionality as it should be enough for purposes of this project.*
 
-## Data preparation/analysis and predicting sentiment with BERTmodel
+## Data preparation/analysis and predicting sentiment with BERT model
 Script related to this section  is located in separate jupiter notebook **Predicting_reviews_sentiment_with_Bert_model.ipynb**.
 ### Step 1: Read dataset and perform basic preprocessing
 In this section following steps are performed:
